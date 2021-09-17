@@ -3,7 +3,7 @@ from flask import Flask, request, Response
 import requests
 import controller
 
-TOKEN = '1846481971:AAEhcOBGX7mvpFvrQGl32HN0iX9R3-aXU4A'
+TOKEN = ''
 TELEGRAM_INIT_WEBHOOK_URL = 'https://api.telegram.org/bot{}/setWebhook?url=https://eba5e4f615d2.ngrok.io/message'.format(
     TOKEN)
 requests.get(TELEGRAM_INIT_WEBHOOK_URL)
