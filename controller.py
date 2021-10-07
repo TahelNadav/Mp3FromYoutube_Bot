@@ -60,8 +60,7 @@ class app_controller:
         :return: a dict with the suggestions - name and link
         """
 
-        # api_key = 'AIzaSyCbNWORtYUVDopm3bcjlB-IhP0bUxVzMt0'
-        api_key = 'AIzaSyAWwxtBdGgUzLHaZA8Klrtuj0sFYJOI5kc'
+        api_key = ''
         youtube = build('youtube', 'v3', developerKey=api_key)
         req = youtube.search().list(q=name_video, part='snippet', type='video')
         res = req.execute()
